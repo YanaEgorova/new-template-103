@@ -52,11 +52,7 @@
     max-width: 50rem;
     margin: 0 auto;
 }
-.policy__img {
-    display: block;
-    width: 100%;
-    margin-bottom: 3rem;
-}
+
 .policy__item .sub-title {
     margin-bottom: 3rem;
     position: relative;
@@ -114,18 +110,22 @@
     }
     .policy__item {
         display: flex;
-        align-items: center;
     }
     .policy__item:nth-child(even) {
         justify-content: flex-end;
     }
-    .policy__img {
-        max-width: 70rem;
-        height: 30rem;
-        object-fit: cover;
-        margin-bottom: 0;
-        margin-right: 5rem;
+    .policy__box {
+        flex-grow: 1;
+        max-width: 40%;
+        margin-right: 3rem;
     }
+    .policy__box.second {
+        background-color: var(--first-brand-color);
+    }
+    .policy__box.first {
+        background-color: var(--second-brand-color);
+    }
+  
     .policy__block {
         max-width: 50rem;
         text-align: left;
